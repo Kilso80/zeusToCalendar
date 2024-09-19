@@ -1,6 +1,6 @@
 # Zeus-Google Calendar Sync
 
-This Python project provides a utility to synchronize timetable data from **Zeus** (a timetable manager) with **Google Calendar**. It helps ensure your calendar stays up-to-date with any changes made in Zeus, including adding, modifying, and deleting events.
+This Python project provides a utility to synchronize timetable data from **Zeus** (EPITA's timetable manager) with **Google Calendar**. It helps ensure your calendar stays up-to-date with any changes made in Zeus, including adding, modifying, and deleting events.
 
 ## Features
 
