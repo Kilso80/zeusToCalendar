@@ -44,7 +44,7 @@ class ZeusEventGetter:
         return {
             'summary': event["SUMMARY"],
             'location': event["LOCATION"].replace('\\', ''),
-            'description': event["UID"],
+            'description': event["UID"] + "\n" + event["DTSTART"] + event["DTEND"] + event["LOCATION"],
             'start': {
                 'dateTime': convertTime(event["DTSTART"]),
                 'timeZone': 'Europe/Paris',

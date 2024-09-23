@@ -5,7 +5,7 @@ import os
 import requests
 c = input("What class do you wanna add ?")
 
-if os.path("classes.txt").exists() and any([c == l.split('|')[0] for l in open("classes.txt").readlines()]):
+if os.path.exists("classes.txt") and any([c == l.split('|')[0] for l in open("classes.txt").readlines()]):
     print("This class already exists")
 else:
     if not os.path.exists("groups.json"):
@@ -51,4 +51,4 @@ else:
         f = open("classes.txt", "a")
         f.write(f"\n{c}|{g['id']}|{calId}")
         f.close()
-        exec(lambda x: actualize(x, g['id']))
+        exec(lambda x: actualize(x, (g['id'], calId)))

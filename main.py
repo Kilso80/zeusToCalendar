@@ -4,7 +4,8 @@ from time import sleep
 from exec import exec
 
 # 2 functions available: actualize or deleteEverything
-# main(deleteEverything)
+# exec(deleteEverything)
+
 for l in open("classes.txt").readlines():
     c, gid, calId = l.removesuffix("\n").split('|')
     gid = int(gid)
